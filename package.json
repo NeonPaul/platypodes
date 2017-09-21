@@ -1,0 +1,13 @@
+{
+  "name": "platypodes",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Paul Kiddle",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "deasync-promise": "^1.0.1",
+    "postcss": "^6.0.11",
+    "vinyl": "^2.1.0"
+  }
+}
