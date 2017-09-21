@@ -2,6 +2,7 @@ const Readable = require('stream').Readable;
 const Vinyl = require('vinyl');
 const fs = require('fs');
 const path = require('path');
+const vfs = require('vfs');
 
 // This is pretty straightforward at the mo...
 class Builder extends Readable {
@@ -32,3 +33,5 @@ class Builder extends Readable {
 }
 
 module.exports = Builder;
+
+module.exports.dest = vfs.dest;
