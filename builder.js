@@ -2,7 +2,7 @@ const Readable = require('stream').Readable;
 const Vinyl = require('vinyl');
 const fs = require('fs');
 const path = require('path');
-const vfs = require('vfs');
+const vfs = require('vinyl-fs');
 
 // This is pretty straightforward at the mo...
 class Builder extends Readable {

@@ -1,6 +1,5 @@
 const Builder = require('../builder');
 const path = require('path');
-const vfs = require('vinyl-fs');
 
 const builder = new Builder(path.join(__dirname, 'src'), function(file) {
   if (file.path.match(/\.html$/)) {
@@ -28,4 +27,4 @@ const builder = new Builder(path.join(__dirname, 'src'), function(file) {
 
 builder.entry('index.html');
 
-builder.pipe(vfs.dest(path.join(__dirname, 'dist')));
+builder.pipe(Builder.dest(path.join(__dirname, 'dist')));
